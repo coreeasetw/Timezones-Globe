@@ -42,4 +42,6 @@ publish the site:
 2. Ensure GitHub Pages is enabled for the repository and set to use the
    "GitHub Actions" source.
 3. The workflow will upload the contents of the repository root and publish
-   them at the configured Pages URL.
+   them at the configured Pages URL. The workflow cleans any local
+   `node_modules` directory before uploading so only the checked-in static
+   files are published.
